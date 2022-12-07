@@ -6,7 +6,7 @@
 
     <arg name="base_frame" default="base_link" />
     <arg name="odom_frame" default="odom" />
-    <arg name="odom_topic_name" default="odom" />
+    <arg name="odom_topic" default="odom" />
 
     <include file="$(find scout_base)/launch/scout_base.launch">
         <arg name="is_scout_mini" value="$(arg is_scout_mini)" />
@@ -16,7 +16,7 @@
 
         <arg name="base_frame" value="$(arg base_frame)" />
         <arg name="odom_frame" value="$(arg odom_frame)" />
-        <arg name="odom_topic_name" value="$(arg odom_topic_name)" />
+        <arg name="odom_topic" value="$(arg odom_topic)" />
     </include>
 
     <group if="$(arg is_scout_mini)">

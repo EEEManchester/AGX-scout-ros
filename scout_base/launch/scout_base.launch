@@ -16,7 +16,7 @@
 
     <arg name="base_frame" default="base_link" />
     <arg name="odom_frame" default="odom" />
-    <arg name="odom_topic_name" default="odom" />
+    <arg name="odom_topic" default="odom" />
 
     <node name="scout_base_node" pkg="scout_base" type="scout_base_node" output="screen" required="true">
         <param name="is_scout_mini" type="bool" value="$(arg is_scout_mini)" />
@@ -26,7 +26,7 @@
 
         <param name="base_frame" type="string" value="$(arg base_frame)" />
         <param name="odom_frame" type="string" value="$(arg odom_frame)" />
-        <param name="odom_topic_name" type="string" value="$(arg odom_topic_name)" />
+        <param name="odom_topic_name" type="string" value="$(arg odom_topic)" />
     </node>
 
 </launch>
